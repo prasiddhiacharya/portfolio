@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasiddhi's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f9fc;
+            color: #2c3e50;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            height: 80px;
+            background-color: #1c2833;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 50px;
+            background-color: #f7f9fc;
+            color: black;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+            margin-right: 50px;
+            max-width: 50%;
+        }
+
+        .leftSection span.green {
+            color: #1abc9c;
+            font-weight: bold;
+        }
+
+        .rightSection img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .sectionTitle {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #34495e;
+            border-bottom: 4px solid #1abc9c;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 5px solid #1abc9c;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            color: #1abc9c;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .contactSection {
+            text-align: center;
+            color: #ecf0f1;
+            padding: 60px 20px;
+            border-top: 2px solid #ecf0f1;
+        }
+
+        .contactSection form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contactSection input,
+        .contactSection textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1.1rem;
+        }
+
+        .contactSection input[type="submit"] {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            padding: 15px 0;
+        }
+
+        .contactSection input[type="submit"]:hover {
+            background-color: #16a085;
+        }
+
+        footer {
+            background-color: #1c2833;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #16a085;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left" style="font-size: 1.5rem; color: #ecf0f1;">Prasiddhi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="firstSection">
+            <div class="leftSection">
+                Hi, I'm <span class="green">Prasiddhi</span>, a passionate <span class="green">BSc.CSIT</span> student.
+            </div>
+            <div class="rightSection">
+                <img src="pot.png" alt="">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="aboutSection">
+            <h1 class="sectionTitle">About Me</h1>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Student Life</h2>
+                    <p>BSc.CSIT student passionate about technology and innovation.</p>
+                </div>
+                <div class="card">
+                    <h2>Content Creation</h2>
+                    <p>Experienced in creating engaging and informative content.</p>
+                </div>
+                <div class="card">
+                    <h2>Web Development</h2>
+                    <p>Aspiring web developer with a keen interest in design and coding.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="servicesSection">
+            <h1 class="sectionTitle">Services</h1>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Content Creation</h2>
+                    <p>Crafting engaging and informative content tailored to your audience.</p>
+                </div>
+                <div class="card">
+                    <h2>Web Design</h2>
+                    <p>Designing user-friendly and aesthetically pleasing websites.</p>
+                </div>
+                <div class="card">
+                    <h2>Digital Marketing</h2>
+                    <p>Promoting brands and products through various online channels.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="secondSection">
+            <h1 class="sectionTitle">Past Projects</h1>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Business Websites</h2>
+                    <p>Designed and developed websites for local businesses.</p>
+                </div>
+                <div class="card">
+                    <h2>Social Media Strategy</h2>
+                    <p>Created content strategies for social media campaigns.</p>
+                </div>
+                <div class="card">
+                    <h2>Advertising Campaigns</h2>
+                    <p>Managed and executed successful advertising campaigns for various brands.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contactSection">
+            <h1 class="sectionTitle">Contact Me</h1>
+            <form onsubmit="alert('Message sent'); return false;">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Prasiddhi's Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
